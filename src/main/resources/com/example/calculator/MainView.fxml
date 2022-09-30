@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #5DADE2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
    <children>
@@ -170,5 +171,6 @@
             </Button>
          </children>
       </GridPane>
+      <Text fx:id="secondText" layoutX="43.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="129.13671875" />
    </children>
 </AnchorPane>

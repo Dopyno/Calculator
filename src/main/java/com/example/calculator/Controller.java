@@ -26,6 +26,7 @@ public class Controller {
     private String addNumber(String numButton){
         number += numButton;
         mainText.setText(number);
+        secondText.setText(number);
         return number;
     }
     public void addNr1(ActionEvent event){
