@@ -10,9 +10,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #5DADE2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #000000; -fx-background-radius: 25;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.Controller">
    <children>
-      <TextField fx:id="mainText" alignment="CENTER_RIGHT" layoutX="43.0" layoutY="36.0" prefHeight="103.0" prefWidth="369.0">
+      <TextField fx:id="mainText" alignment="CENTER_RIGHT" layoutX="43.0" layoutY="36.0" prefHeight="103.0" prefWidth="369.0" style="-fx-background-radius: 20;">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
@@ -39,7 +39,7 @@
                   <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Button fx:id="sevenB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr7" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="7">
+                  <Button fx:id="sevenB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr7" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="7" textFill="WHITE">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </GridPane.margin>
@@ -49,7 +49,7 @@
                   </Button>
                </children>
             </GridPane>
-            <Button fx:id="eightB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr8" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="8" GridPane.columnIndex="1">
+            <Button fx:id="eightB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr8" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="8" textFill="WHITE" GridPane.columnIndex="1">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -57,7 +57,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="nineB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="14.0" mnemonicParsing="false" onAction="#addNr9" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="9" GridPane.columnIndex="2">
+            <Button fx:id="nineB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="14.0" mnemonicParsing="false" onAction="#addNr9" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="9" textFill="WHITE" GridPane.columnIndex="2">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -65,7 +65,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="division" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="/" GridPane.columnIndex="3">
+            <Button fx:id="division" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#divideNumbers" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F39C12; -fx-background-radius: 30;" text="/" textFill="WHITE" GridPane.columnIndex="3">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -73,7 +73,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="oneB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr1" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="1" GridPane.rowIndex="2">
+            <Button fx:id="oneB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr1" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="1" textFill="WHITE" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -81,7 +81,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="fourB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr4" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="4" GridPane.rowIndex="1">
+            <Button fx:id="fourB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr4" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="4" textFill="WHITE" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -89,7 +89,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="fiveB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr5" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="fiveB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr5" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -97,7 +97,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="sixB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr6" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="sixB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr6" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -105,7 +105,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="multiplication" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button fx:id="multiplication" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#multiplyNumbers" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F39C12; -fx-background-radius: 30;" text="*" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -113,7 +113,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="subtraction" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button fx:id="substraction" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#subtractNumbers" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F39C12; -fx-background-radius: 30;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -121,7 +121,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="twoB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr2" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="twoB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr2" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -129,7 +129,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="threeB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr3" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="threeB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNr3" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -137,7 +137,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="clear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="C" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button fx:id="clear" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#clear" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #B3B6B7; -fx-background-radius: 30;" text="C" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -145,7 +145,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="equalB" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button fx:id="equalB" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#calculate" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #B3B6B7; -fx-background-radius: 30;" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -153,7 +153,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="zeroB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="310.0" mnemonicParsing="false" onAction="#addNr0" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="0" GridPane.rowIndex="3">
+            <Button fx:id="zeroB" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="310.0" mnemonicParsing="false" onAction="#addNr0" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #17202A; -fx-background-radius: 30;" text="0" textFill="WHITE" GridPane.rowIndex="3">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -161,7 +161,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </GridPane.margin>
             </Button>
-            <Button fx:id="add" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F7DC6F;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button fx:id="addB" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#addNumbers" prefHeight="91.0" prefWidth="87.0" style="-fx-background-color: #F39C12; -fx-background-radius: 30;" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="System Bold" size="36.0" />
                </font>
@@ -171,6 +171,14 @@
             </Button>
          </children>
       </GridPane>
-      <Text fx:id="secondText" layoutX="43.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="129.13671875" />
+      <Text fx:id="secondText" layoutX="55.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="201.13671875">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fx:id="operatorText" layoutX="379.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="21.13671875">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
